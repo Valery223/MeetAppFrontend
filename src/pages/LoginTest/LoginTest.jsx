@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const LoginTest = () => {
+export function LoginTest() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -44,6 +44,4 @@ const LoginTest = () => {
       </form>
     </div>
   );
-};
-
-export default LoginTest;
+}

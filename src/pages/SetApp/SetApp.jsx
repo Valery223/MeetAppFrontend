@@ -1,3 +1,3 @@
 export function SetApp() {
-  return <></>;
+  return <>SetApp</>;
 }

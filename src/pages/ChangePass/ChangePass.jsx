@@ -1,3 +1,3 @@
 export function ChangePass() {
-  return <></>;
+  return <>ChangesPass</>;
 }

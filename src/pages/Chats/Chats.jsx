@@ -1,3 +1,3 @@
 export function Chats() {
-  return <></>;
+  return <>Chats</>;
 }

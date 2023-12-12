@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function Registration() {
+export function Registration() {
   return (
     <>
       <h1>Registration123</h1>
