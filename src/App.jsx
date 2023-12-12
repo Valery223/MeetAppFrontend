@@ -7,14 +7,30 @@ import {
 
 //pages
 import Home from "./pages/Home";
-import Test1 from "./pages/Test1";
-//import Login from "./pages/Login";
-import LoginTest from "./pages/LoginTest";
-import Registration from "./pages/Registration";
+import { ChangePass } from "./pages/ChangePass/ChangePass";
+import { Chats } from "./pages/Chats/Chats";
+import LoginTest from "./pages/Login/LoginTest";
+import Registration from "./pages/Registration/Registration";
+import { Search } from "./pages/Search";
+import { SetApp } from "./pages/SetApp/SetApp";
+import { SetProfile } from "./pages/SetProfile/SetProfile";
+
+/*
+import {
+  ChangePass,
+  Chats,
+  Login,
+  Registration,
+  Search,
+  SetApp,
+  SetProfile,
+} from "./pages";
+*/
 
 //layouts
 import { RootLayout } from "./layouts";
-
+import Settings from "./pages/Settings";
+import Auth from "./pages/Auth";
 import "./index.css";
 
 const router = createBrowserRouter(
@@ -22,10 +38,9 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
-        <Route path="/test1" element={<Test1 />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/chats" element={<Chats />} />
       </Route>
-      <Route path="/login" element={<LoginTest />} />
-      <Route path="/registration" element={<Registration />} />
     </Route>
   )
 );

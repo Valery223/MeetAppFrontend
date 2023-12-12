@@ -1,0 +1,12 @@
+.mainWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: brown;
+  min-height: 100vh;
+}
+.photoWrapper {
+  background-color: aqua;
+}
+.textWrapper {
+  background-color: antiquewhite;
+}

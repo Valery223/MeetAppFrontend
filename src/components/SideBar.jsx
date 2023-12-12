@@ -1,19 +1,26 @@
 import { NavLink } from "react-router-dom";
+import s from "./Sidebar.module.css";
 
 function SideBar() {
   return (
-    <nav style={{ backgroundColor: "red", minHeight: "100vh" }}>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="g">login</NavLink>
-        </li>
-        <li>
-          <NavLink to="Test1">test1</NavLink>
-        </li>
-      </ul>
+    <nav className={s.mainWrapper}>
+      <dl className={s.navlist}>
+        <dt>
+          <NavLink to="/search" className={s.textelem}>
+            Лента
+          </NavLink>
+        </dt>
+        <dt>
+          <NavLink to="/chats" className={s.textelem}>
+            Чаты
+          </NavLink>
+        </dt>
+        <dt>
+          <NavLink to="/settings" className={s.textelem}>
+            Настройки
+          </NavLink>
+        </dt>
+      </dl>
     </nav>
   );
 }
