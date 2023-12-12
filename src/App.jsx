@@ -8,12 +8,14 @@ import {
 //pages
 import Home from "./pages/Home";
 import Test1 from "./pages/Test1";
-import Login from "./pages/Login";
+//import Login from "./pages/Login";
 import LoginTest from "./pages/LoginTest";
 import Registration from "./pages/Registration";
 
 //layouts
-import RootLayout from "./layouts/RootLayout";
+import { RootLayout } from "./layouts";
+
+import "./index.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
