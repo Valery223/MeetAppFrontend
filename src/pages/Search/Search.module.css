@@ -2,11 +2,44 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: brown;
-  min-height: 100vh;
+  height: 100dvh;
 }
 .photoWrapper {
   background-color: aqua;
 }
+
 .textWrapper {
+  display: grid;
   background-color: antiquewhite;
+  font-size: 23px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 10px 140px;
+  font-size: 140px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #c456d3;
+  border-radius: 5px;
+  color: #c456d3;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.buttons:hover {
+  background-color: #c456d3;
+  color: #fff;
+}
+
+.buttons:active {
+  background-color: #c456d3;
+  color: #fff;
+}
+
+.photo {
+  min-height: 69em;
 }
