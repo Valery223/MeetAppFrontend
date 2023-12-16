@@ -24,12 +24,12 @@ import { Home } from "./Home";
 
 //css
 import "./index.css";
-
+let isLoggedIn = true;
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
+        <Route index element={<Home id={3} />} />
         <Route path="/search" element={<Search />} />
         <Route path="/chats" element={<Chats />} />
         <Route path="/settings" element={<SettingsLayout />}>
