@@ -35,11 +35,11 @@ export function Search() {
               {searchData.fist_name} {searchData.last_name}
             </h1>{" "}
           </div>
-          <div>
+          <div className={s.textTabs}>
             <h2>Описание</h2>
             <p>{searchData.email}</p>
           </div>
-          <div>
+          <div className={s.textTabs}>
             <h2>Личная информация</h2>
             <p>Доделать</p>
           </div>

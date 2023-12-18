@@ -9,7 +9,10 @@
   display: grid;
   background-color: antiquewhite;
   font-size: 23px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+}
+.textTabs {
+  margin-left: 15px;
 }
 
 .photoWrapper {
