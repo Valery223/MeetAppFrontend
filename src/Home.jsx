@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { fetchSearchData } from "./api/api";
 
-export function Home({ id }) {
+export function Home({}) {
   const [searchData, setSearchData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetchSearchData(id);
+        const data = await fetchSearchData();
         setSearchData(data);
       } catch (error) {
         console.log("handle error!!!");
