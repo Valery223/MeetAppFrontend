@@ -1,0 +1,15 @@
+FROM node:20-alpine as builder
+RUN apk update
+RUN apk add git
+RUN apk add npm
+WORKDIR app/
+RUN git clone https://github.com/Valery223/MeetAppFrontend.git
+WORKDIR MeetAppFrontend
+RUN npm i
+EXPOSE 5173
+ENTRYPOINT ["npm", "run", "dev"]
+GitHub - Valery223/MeetAppFrontend
+GitHub - Valery223/MeetAppFrontend
+github.com
+sudo docker build -t valery/react:v1 .
+sudo docker run -it -d -p 5173:5173 valery/react:v1

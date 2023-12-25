@@ -1,13 +1,13 @@
 .mainWrapper {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  background-color: brown;
   height: 100vh;
 }
 
 .textWrapper {
   display: grid;
-  background-color: antiquewhite;
+  background: rgba(239, 222, 222, 0.58);
+
   font-size: 23px;
   grid-template-rows: 100px 1fr 1fr;
 }
@@ -16,5 +16,5 @@
 }
 
 .photoWrapper {
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
 }

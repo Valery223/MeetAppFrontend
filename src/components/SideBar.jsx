@@ -6,17 +6,17 @@ function SideBar() {
     <nav className={s.mainWrapper}>
       <dl className={s.navlist}>
         <dt>
-          <NavLink to="/search" className={s.textelem}>
+          <NavLink to="/search" className={s.textelem1}>
             Лента
           </NavLink>
         </dt>
         <dt>
-          <NavLink to="/chats" className={s.textelem}>
+          <NavLink to="/chats" className={s.textelem2}>
             Чаты
           </NavLink>
         </dt>
         <dt>
-          <NavLink to="/settings" className={s.textelem}>
+          <NavLink to="/settings" className={s.textelem3}>
             Настройки
           </NavLink>
         </dt>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export function LoginTest() {
+export function LoginTest({ setIsLoggedIn, isLoggedIn }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,6 +17,9 @@ export function LoginTest() {
     e.preventDefault();
     console.log("Username:", username);
     console.log("Password:", password);
+
+    console.log("s");
+    useNavigate("/search");
   };
 
   return (

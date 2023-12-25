@@ -14,6 +14,7 @@ export function Search() {
       try {
         const data = await fetchSearchData();
         setSearchData(data);
+        console.log("qqq");
       } catch (error) {
         console.log("handle error!!!");
         //set default data
@@ -32,16 +33,16 @@ export function Search() {
         <div className={s.textWrapper}>
           <div>
             <h1>
-              {searchData.fist_name} {searchData.last_name}
+              {searchData.name} {searchData.age}
             </h1>{" "}
           </div>
           <div className={s.textTabs}>
             <h2>Описание</h2>
-            <p>{searchData.email}</p>
+            <p>{searchData.description}</p>
           </div>
           <div className={s.textTabs}>
             <h2>Личная информация</h2>
-            <p>Доделать</p>
+            <p>{searchData.description}</p>
           </div>
         </div>
       ) : (

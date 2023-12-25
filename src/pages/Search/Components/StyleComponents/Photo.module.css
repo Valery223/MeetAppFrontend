@@ -54,5 +54,16 @@
 .photo {
   min-height: calc(100vh - 70px);
   min-width: 100vh;
-  background-color: red;
+  max-height: calc(100vh - 70px);
+  max-width: 100vh;
+}
+.photo img {
+  padding-top: 5px;
+  min-height: calc(100vh - 70px);
+  min-width: 100vh;
+  max-height: calc(100vh - 70px);
+  max-width: 100vh;
+  object-fit: none;
+  height: auto;
+  width: auto;
 }
